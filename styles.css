@@ -123,3 +123,32 @@ main {
     background-color: yellow;
     border-radius: 50%;
 }
+.cat-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #sprite-cat {
+    width: 400px; /* Adjust to fit the sprite size */
+    transform:rotate(30deg);
+    cursor: pointer;
+  }
+  
+  #meow-text {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    display: none; /* Initially hidden */
+  }
+  
+  #meow-text.visible {
+    display: block; /* Show on hover */
+  }
+  
